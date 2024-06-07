@@ -1,4 +1,7 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const { ApolloServer } = require("@apollo/server");
+
 const { startStandaloneServer } = require("@apollo/server/standalone");
 const typeDefs = require("./schema.js");
 const resolvers = require("./resolvers.js");
