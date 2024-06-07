@@ -2,7 +2,7 @@ const { ApolloServer } = require("@apollo/server");
 const { startStandaloneServer } = require("@apollo/server/standalone");
 const typeDefs = require("./schema.js");
 const resolvers = require("./resolvers.js");
-const TrackAPI = require("./tarck-api.js");
+const TrackAPI = require("./resolvers.js");
 
 async function startApolloServer() {
   const server = new ApolloServer({ typeDefs, resolvers });
